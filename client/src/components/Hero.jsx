@@ -14,7 +14,7 @@ const Hero = () => {
 
     const fetchData = async () => {
         try {
-            const hero_data = await axios.get(`http://localhost:5000`);
+            const hero_data = await axios.get(`http://localhost:3000`);
             setHeroInfo(hero_data.data.articles[Math.floor(Math.random() * hero_data.data.articles.length - 1)])
             console.log(hero_data.data.articles[Math.floor(Math.random() * hero_data.data.articles.length - 1)])
         }
